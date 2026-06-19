@@ -1,6 +1,6 @@
 name: Daily News Bot
 
-"on":
+on:
   workflow_dispatch:
 
   schedule:
@@ -8,11 +8,9 @@ name: Daily News Bot
 
 jobs:
   run-news:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v4
 
