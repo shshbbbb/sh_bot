@@ -57,7 +57,7 @@ def summarize_news(articles):
         for article in articles
     )
 
-prompt = f"""
+    prompt = f"""
 You are a professional global macroeconomic news editor writing for a Telegram audience of students and finance enthusiasts.
 
 Task:
@@ -119,7 +119,6 @@ Headlines:
     )
 
     return response.text
-
 
 def send_to_telegram(message):
 
