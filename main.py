@@ -57,7 +57,7 @@ def summarize_news(articles):
         for article in articles
     )
 
-    prompt = f"""
+prompt = f"""
 You are a professional global macroeconomic news editor writing for a Telegram audience of students and finance enthusiasts.
 
 Task:
@@ -70,28 +70,42 @@ Output format:
 
 🌍 Global Economic News 💰📈
 
-1. Story 🧠
+1. Title of story + 1–2 relevant emojis only
+Short but informative explanation (2–4 sentences). Include key numbers (percentages, prices, rates) if available.
+
+2. Title of story + 1–2 relevant emojis only
+Short explanation (2–4 sentences) with context and impact on markets/economy.
+
+3. Title of story + 1–2 relevant emojis only
 Short explanation (2–4 sentences).
 
-2. Story 🧠
+4. Title of story + 1–2 relevant emojis only
 Short explanation (2–4 sentences).
 
-3. Story 🧠
-Short explanation (2–4 sentences).
-
-4. Story 🧠
-Short explanation (2–4 sentences).
-
-5. Story 🧠
+5. Title of story + 1–2 relevant emojis only
 Short explanation (2–4 sentences).
 
 📌 Market Summary:
-2–3 sentences about overall market mood.
+Write 2–3 sentences summarizing the overall global market mood (risk-on / risk-off), and what investors should watch next (rates, inflation, geopolitics, crypto, etc.).
 
 Rules:
-- Maximum 200 words.
-- Do NOT invent data.
+- Maximum 200 words total.
+- Clear, professional English (not too academic, not casual).
 - Use numbers when available.
+- Do NOT invent data.
+- If multiple headlines describe the same event, merge them into one point.
+- Each story MUST use different emojis (do not repeat emojis across stories).
+- Emojis must match meaning of the topic:
+  - Inflation / macro → 📊📈💹
+  - Central banks / rates → 🏦💰
+  - Stocks / markets → 📉📈💼
+  - Crypto → ₿🚀🪙
+  - Oil / energy → 🛢️⚡
+  - Risk / uncertainty → ⚠️🌍
+  - Tech / companies → 🤖💻🚀
+- Avoid meaningless or random emojis like 🤯 unless absolutely necessary.
+
+Make it feel like a Bloomberg-style daily briefing for Telegram.
 
 Headlines:
 {headlines}
