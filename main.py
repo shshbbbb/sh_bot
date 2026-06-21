@@ -95,6 +95,17 @@ Short explanation (2–4 sentences).
 📌 Market Summary:
 Write 2–3 sentences summarizing the overall global market mood (risk-on / risk-off), and what investors should watch next (rates, inflation, geopolitics, crypto, etc.).
 
+📊 Live Market Snapshot:
+
+Gold: {gold_price}
+Brent Oil: {brent_price}
+WTI Oil: {wti_price}
+Bitcoin: {btc_price}
+Ethereum: {eth_price}
+S&P 500 Futures: {sp500_price}
+DXY (US Dollar Index): {dxy_price}
+
+
 Rules:
 - Maximum 200 words total.
 - Clear, professional English (not too academic, not casual).
