@@ -150,6 +150,13 @@ Short explanation
 📌 Market Summary:
 Write 2–3 sentences summarizing overall global market mood (risk-on / risk-off), cross-asset behavior, and what investors should watch next.
 
+📚 Daily Econ Word (Education Bonus):
+- From the provided news, select ONE economic or financial term that might be difficult for general readers.
+- The term must be directly relevant to one of the stories.
+- Explain it in a simple, clear way (2–3 sentences max).
+- Make it practical and intuitive, not textbook-like.
+- Example types: inflation, yield curve, liquidity, fiscal deficit, hawkish, quantitative tightening, etc.
+
 Rules:
 - Maximum 200 words total.
 - Clear, professional English (not too academic, not casual).
