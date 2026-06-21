@@ -17,6 +17,7 @@ from google import genai
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_ID = os.getenv("CHANNEL_ID")
 GEMINI_KEY = os.getenv("GEMINI_KEY")
+CHANNEL_ID_2 = os.getenv("CHANNEL_ID_2")
 
 
 RSS_FEEDS = [
@@ -122,22 +123,21 @@ Headlines:
 
 def send_to_telegram(message):
 
-    url = (
-        f"https://api.telegram.org/"
-        f"bot{BOT_TOKEN}/sendMessage"
-    )
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
-    payload = {
-        "chat_id": CHANNEL_ID,
-        "text": message
-    }
+    for chat_id in [CHANNEL_ID, CHANNEL_ID_2]:
 
-    result = requests.post(
-        url,
-        json=payload
-    )
+        payload = {
+            "chat_id": chat_id,
+            "text": message
+        }
 
-    print(result.json())
+        result = requests.post(
+            url,
+            json=payload
+        )
+
+        print(result.json())
 
 
 def main():
