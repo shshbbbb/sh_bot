@@ -21,11 +21,47 @@ CHANNEL_ID_2 = os.getenv("CHANNEL_ID_2")
 
 
 RSS_FEEDS = [
+    # 📊 MarketWatch (official RSS)
     "https://feeds.marketwatch.com/marketwatch/topstories/",
+
+    # ₿ CoinDesk (crypto)
     "https://www.coindesk.com/arc/outboundfeeds/rss/",
+
+    # 📈 Investing.com (official RSS)
     "https://www.investing.com/rss/news.rss",
+    "https://www.investing.com/rss/news_25.rss",  # economic calendar / macro focus
+
+    # 📰 Reuters (official but limited RSS)
     "https://feeds.reuters.com/reuters/businessNews",
     "https://feeds.reuters.com/reuters/globalmarketsNews",
+
+    # 📊 Yahoo Finance (official RSS)
+    "https://finance.yahoo.com/news/rssindex",
+    "https://feeds.finance.yahoo.com/rss/2.0/headline",
+
+    # 🏦 Financial Times (official section RSS)
+    "https://www.ft.com/world?format=rss",
+    "https://www.ft.com/markets?format=rss",
+    "https://www.ft.com/global-economy?format=rss",
+
+    # 🏛 Bloomberg (⚠️ via Google News RSS workaround)
+    "https://news.google.com/rss/search?q=site:bloomberg.com+markets",
+    "https://news.google.com/rss/search?q=site:bloomberg.com+economy",
+
+    # 📰 Wall Street Journal (⚠️ limited + workaround)
+    "https://wsj.com/xml/rss/3_7014.xml",
+    "https://wsj.com/xml/rss/3_7031.xml",
+    "https://news.google.com/rss/search?q=site:wsj.com+markets",
+
+    # 📊 Morningstar (no official RSS → Google News workaround)
+    "https://news.google.com/rss/search?q=site:morningstar.com+stocks",
+    "https://news.google.com/rss/search?q=site:morningstar.com+fund",
+
+    # 📉 Barron's (no official RSS → workaround)
+    "https://news.google.com/rss/search?q=site:barrons.com+markets",
+
+    # 🌍 The Economist (no official RSS → workaround)
+    "https://news.google.com/rss/search?q=site:economist.com+economy"
 ]
 
 
