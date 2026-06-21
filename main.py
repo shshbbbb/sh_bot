@@ -158,7 +158,7 @@ Write 2–3 sentences summarizing overall global market mood (risk-on / risk-off
 - Example types: inflation, yield curve, liquidity, fiscal deficit, hawkish, quantitative tightening, etc.
 
 Rules:
-- Maximum 200 words total.
+- Keep total output between 200 and 250 words.
 - Clear, professional English (not too academic, not casual).
 - Do NOT invent data.
 - Each section should use different emojis per story.
